@@ -7,15 +7,15 @@ Cloud link: https://
 
 ### To create environment from any command prompt without anaconda(requirements.txt)
 
-C:\Users\Asus\PYTHON_C\DLBDSME01\spam_filter> py -m venv env
+C:\Users\Asus\PYTHON_C\DLBDSME01\spam_filter> py -m venv environ
 
 ### To activate environment
 
-C:\Users\Asus\PYTHON_C\DLBDSME01\spam_filter> env\Scripts\activate
+C:\Users\Asus\PYTHON_C\DLBDSME01\spam_filter> environ\Scripts\activate
 
 ### To install requirements for environment:
 
-(env) C:\Users\Asus\PYTHON_C\DLBDSME01\spam_filter>pip install -r requirements.txt
+(environ) C:\Users\Asus\PYTHON_C\DLBDSME01\spam_filter>pip install -r requirements.txt
 
 -------------------
 
