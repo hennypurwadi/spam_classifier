@@ -19,7 +19,7 @@ C:\Users\Asus\PYTHON_C\DLBDSME01\spam_filter> environ\Scripts\activate
 
 -------------------
 
-### To create conda environment from anaconda command prompt (nlp_env.yaml)
+### To create conda environment from anaconda command prompt (envir.yaml)
 
 (base) C:\> cd\
 
