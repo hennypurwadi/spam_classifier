@@ -53,7 +53,7 @@ ctrl + Z
 
 ## To run streamlit_app.py from command prompt with streamlit:
 
-(envir) C:\Users\Asus\PYTHON_C\DLBDSME01\spam_filter> streamlit run spam_classifier.py
+(environ) C:\Users\Asus\PYTHON_C\DLBDSME01\spam_filter> streamlit run spam_classifier.py
 
 
   Local URL: http://localhost:8501
