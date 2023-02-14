@@ -4,21 +4,6 @@ Cloud link: https://
 
 ## Note:
 
-
-### To create environment from any command prompt without anaconda(requirements.txt)
-
-C:\Users\Asus\PYTHON_C\DLBDSME01\spam_filter> py -m venv environ
-
-### To activate environment
-
-C:\Users\Asus\PYTHON_C\DLBDSME01\spam_filter> environ\Scripts\activate
-
-### To install requirements for environment:
-
-(environ) C:\Users\Asus\PYTHON_C\DLBDSME01\spam_filter>pip install -r requirements.txt
-
--------------------
-
 ### To create conda environment from anaconda command prompt (envir.yaml)
 
 (base) C:\> cd\
@@ -50,6 +35,21 @@ ctrl + Z
 (envir) C:\Users\Asus\PYTHON_C\DLBDSME01\spam_filter> conda env update -f envir.yaml
 
 --------------
+
+
+### To create environment from any command prompt without anaconda(requirements.txt)
+
+C:\Users\Asus\PYTHON_C\DLBDSME01\spam_filter> py -m venv environ
+
+### To activate environment
+
+C:\Users\Asus\PYTHON_C\DLBDSME01\spam_filter> environ\Scripts\activate
+
+### To install requirements for environment:
+
+(environ) C:\Users\Asus\PYTHON_C\DLBDSME01\spam_filter>pip install -r requirements.txt
+
+-------------------
 
 ## To run streamlit_app.py from command prompt with streamlit:
 
