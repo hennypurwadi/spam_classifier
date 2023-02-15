@@ -6,6 +6,8 @@ import joblib
 import streamlit as st
 import unicodedata
 import nltk
+nltk.download('stopwords')
+nltk.download('wordnet')
 from nltk.tokenize import RegexpTokenizer
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
