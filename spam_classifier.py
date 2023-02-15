@@ -47,18 +47,18 @@ def tokenize(text):
 
 def load_models():     
     # Load the vectorizer.
-    file = open('../spam_filter/src/code_model_deploy/vectorizer.pkl', 'rb')
+    file = open('vectorizer.pkl', 'rb')
     vectorizer = joblib.load(file)
     file.close()
     
     # Load the LR Model.
-    file = open('../spam_filter/src/code_model_deploy/model.pkl', 'rb')
+    file = open('model.pkl', 'rb')
     model = joblib.load(file)
     file.close()
     
     return vectorizer, model
 
-df = pd.read_csv('../spam_filter/data/processed/SMSSpamColl.csv', encoding='utf-8')
+df = pd.read_csv('SMSSpamColl.csv', encoding='utf-8')
 cv=TfidfVectorizer(lowercase=True,preprocessor=clean_text,stop_words='english',ngram_range=(1,3),tokenizer=tokenize)
 text_counts=cv.fit_transform(df['text'].values.astype('U'))
 x_train, x_test, y_train, y_test = train_test_split(text_counts,df['label'],test_size=0.3)
