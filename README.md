@@ -19,7 +19,18 @@ proposed along with a diagram concept plan for the model’s integration into da
 
 ![diagram flow](https://github.com/hennypurwadi/spam_classifier/blob/main/spam_filter/docs/images/spam_filter_diagram.jpeg)
 
-## Note:
+## Common spam words
+Using the WordCloud Python library, we can investigate the most common words that appear 
+in spam categories. Words such as "free”, "won", "win", "awarded", "cash" "prize", "phone",
+"urgent", "offer", "now", and "claim" seem often appear.
+
+![diagram flow](https://github.com/hennypurwadi/spam_classifier/blob/main/spam_filter/docs/images/spam_wordcloud.jpeg)
+
+In contrast, those words do not appear in ham categories. 
+
+![diagram flow](https://github.com/hennypurwadi/spam_classifier/blob/main/spam_filter/docs/images/ham_wordcloud.jpeg)
+
+## Environment setup:
 
 ### To create conda environment from anaconda command prompt (envir.yaml)
 
@@ -39,9 +50,7 @@ proposed along with a diagram concept plan for the model’s integration into da
 
 ### To escape:
 
-ctrl + C 
-
-ctrl + Z
+ctrl + C or ctrl + Z
 
 ### To de-activate conda environment from anaconda command prompt:
 
@@ -52,7 +61,6 @@ ctrl + Z
 (envir) C:\Users\Asus\PYTHON_C\DLBDSME01\spam_filter> conda env update -f envir.yaml
 
 --------------
-
 
 ### To create environment from any command prompt without anaconda(requirements.txt)
 
@@ -71,10 +79,5 @@ C:\Users\Asus\PYTHON_C\DLBDSME01\spam_filter> environ\Scripts\activate
 ## To run streamlit_app.py from command prompt with streamlit:
 
 (environ) C:\Users\Asus\PYTHON_C\DLBDSME01\spam_filter> streamlit run spam_classifier.py
-
-
-  Local URL: http://localhost:8501
-  
-  Network URL: http://192.168.100.31:8501
 
 ------------------------
