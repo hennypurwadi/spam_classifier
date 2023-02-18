@@ -42,13 +42,11 @@ In contrast, those words do not appear in ham categories.
 ![diagram flow](https://github.com/hennypurwadi/spam_classifier/blob/main/spam_filter/docs/images/ham_wordcloud.jpeg)
 
 ## Compared several Machine Learning Model's performance:
-Among various classifiers in this project, Multinomial Naïve bayes has displayed very good performance, with accuracy of 99%, precision of 98%, 93% recall, and 96% f1-score. Therefore, this top performer model will be used to classify new data.
 
 ![ML performence](https://github.com/hennypurwadi/spam_classifier/blob/main/spam_filter/docs/images/ML_performance.jpg)
 
 ## Evaluation 
 The confusion matrix is a table that summarizes the classification to predict different classes. One axis of the confusion matrix represents the label predicted by the model, while the other axis represents the actual label. (Burkov, A., 2019, p. 65)
-
 
 Based on confusion matrix output, this research used four effective measures: 
 
@@ -72,6 +70,15 @@ F1-score = 2 * (Precision * Recall) / (Precision + Recall)
 
 To analyze performance of several machine learning models, will need to compare their accuracy, precision, recall, and f1-score. 
 Normalized Confusion Matrix is confusion matrix which normalized become numbers between 0 - 1 to simplify it and make it become easier to interpret.	
+
+## Logistic Regression model performance
+Among various classifiers in this project, Logistic Regression has displayed worst performance, with high accuracy of 88%, but very poor precision of 0%, 0% recall, and 0% f1-score. Therefore, this top performer model will be used to classify new data.
+![LR performence](https://github.com/hennypurwadi/spam_classifier/blob/main/spam_filter/docs/images/Logistic%20regression.jpg)
+
+## Multinomial Naiive Bayes model performance:
+Among various classifiers in this project, Multinomial Naïve bayes has displayed very good performance, with accuracy of 99%, precision of 98%, 93% recall, and 96% f1-score. Therefore, this top performer model will be used to classify new data.
+
+![Multionomial NB performence](https://github.com/hennypurwadi/spam_classifier/blob/main/spam_filter/docs/images/Multinomial%20NB.jpg)
 
 ## Error Analysis
 Using simpler metrics like accuracy score only without comparing to other metrics can be misleading. Logistic Regression model show high accuracy just by predicting the majority class (ham), although it failed to identify minority class (spam). This can result in a high rate of false negative, where spam emails incorrectly classified as ham. 
