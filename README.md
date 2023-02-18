@@ -26,6 +26,10 @@ proposed along with a diagram concept plan for the model’s integration into da
 5.The machine learning lifecycle on dataset iteration keep looping to maintain accuracy.
 6.The model will be incorporated into the service team's workflow to simplify email classification.
 
+## Data Understanding
+There is an imbalance distribution of data between spam and ham, with 86.6% of data labelled as ham, and only 13.4% of them labelled as spam. If the dataset is not balanced, it can have significant impact on the performance of machine learning algorithms.
+![diagram flow](https://github.com/hennypurwadi/spam_classifier/blob/main/spam_filter/docs/images/label_count_chart.jpeg)
+
 ## Common spam words
 Using the WordCloud Python library, we can investigate the most common words that appear 
 in spam categories. Words such as "free”, "won", "win", "awarded", "cash" "prize", "phone",
@@ -38,8 +42,28 @@ In contrast, those words do not appear in ham categories.
 ![diagram flow](https://github.com/hennypurwadi/spam_classifier/blob/main/spam_filter/docs/images/ham_wordcloud.jpeg)
 
 ## Compared several Machine Learning Model's performance:
+Among various classifiers in this project, Multinomial Naïve bayes has displayed very good performance, with accuracy of 99%, precision of 98% , 93% recall, and 96% f1-score. Therefore, this top performer model will be used to classify new data.
 
 ![ML performence](https://github.com/hennypurwadi/spam_classifier/blob/main/spam_filter/docs/images/ML_performance.jpg)
+
+## Evaluation 
+The confusion matrix is a table that summarizes the classification to predict different classes. One axis of the confusion matrix represents the label predicted by the model, while the other axis represents the actual label. (Burkov, A., 2019, p. 65)
+
+Based on confusion matrix output, this research used four effective measures: 
+True Positive (TP) = Truly predicted as Positive. True Negative (TN) = Truly predicted as Negative. False Positive (FP) = Falsely predicted as Positive. False Negative (FN) = Falsely predicted as Negative.
+
+Precision is the proportion of correctly positive predictions divided by the total number of positive predictions. Precision = TP/(TP+FP)
+
+Recall is proportion of correctly positive predictions divided by the total number of actual positive. Recall(R) = TP/(TP+FN)
+
+Accuracy is proportion of correct predictions divided by the total examples (Burkov, A., 2019, p. 67). Accuracy(A) = (TP+TN) / (TP + TN + FP + FN)
+
+F1-Score is balancing precision and recall. The worst value is 0, and the best value is 1. 
+
+F1-score = 2 * (Precision * Recall) / (Precision + Recall)
+
+To analyze performance of several machine learning models, will need to compare their accuracy, precision, recall, and f1-score. 
+Normalized Confusion Matrix is confusion matrix which normalized become numbers between 0 - 1 to simplify it and make it become easier to interpret.	
 
 ## Error Analysis
 Using simpler metrics like accuracy score only without comparing to other metrics can be misleading. Logistic Regression model show high accuracy just by predicting the majority class (ham), although it failed to identify minority class (spam). This can result in a high rate of false negative, where spam emails incorrectly classified as ham. 
@@ -59,6 +83,9 @@ Machine learning algorithms perform optimally when the number of samples in each
 
 10 Techniques to deal with Imbalanced Classes in Machine Learning. (2020, July 23). https://www.analyticsvidhya.com/blog/2020/07/10-techniques-to-deal-with-class-imbalance-in-machine-learning/
 
+## Conclusion
+
+-----------------------
 ## Environment setup:
 
 ### To create conda environment from anaconda command prompt (envir.yaml)
