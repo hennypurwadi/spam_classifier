@@ -19,12 +19,12 @@ proposed along with a diagram concept plan for the model’s integration into da
 
 ![diagram flow](https://github.com/hennypurwadi/spam_classifier/blob/main/spam_filter/docs/images/spam_filter_diagram.jpeg)
 ## Spam email classification machine learning model requires several steps:
-1	First, the model is trained with labelled dataset. Then, save the trained model.
-2	Then the stored model predicts spam or not spam when user enters new email.
-3	The input email and prediction are added to dataset, to increase model accuracy over time.
-4	The model keeps re-trained and re-tested with new data. (Iterative optimization).
-5	The machine learning lifecycle on dataset iteration keep looping to maintain accuracy.
-6	The model will be incorporated into the service team's workflow to simplify email classification.
+1.First, the model is trained with labelled dataset. Then, save the trained model.
+2.Then the stored model predicts spam or not spam when user enters new email.
+3.The input email and prediction are added to dataset, to increase model accuracy over time.
+4.The model keeps re-trained and re-tested with new data. (Iterative optimization).
+5.The machine learning lifecycle on dataset iteration keep looping to maintain accuracy.
+6.The model will be incorporated into the service team's workflow to simplify email classification.
 
 ## Common spam words
 Using the WordCloud Python library, we can investigate the most common words that appear 
@@ -41,10 +41,20 @@ In contrast, those words do not appear in ham categories.
 
 ![ML performence](https://github.com/hennypurwadi/spam_classifier/blob/main/spam_filter/docs/images/ML_performance.jpg)
 
+## Error Analysis
+Using simpler metrics like accuracy score only without comparing to other metrics can be misleading. Logistic Regression model show high accuracy just by predicting the majority class (ham), although it failed to identify minority class (ham). This can result in a high rate of false negative, where spam emails incorrectly classified as ham. 
+
 Multinomial naiive bayes as the best model, has been saved as both model.pkl and vectorizer.pkl. It has been loaded and deployed to cloud.
+Although Multinomial Naïve Bayes performed the best among other algorithms in training and testing data, it still shows several errors in classifying new data.
 
-##Recommendations for Future
+## Limitation
+This study has several limitations, such as: 
+1.Too small dataset size, which has led to inadequate training.
+2.Imbalance amount of two categories, lack of training for the minor category compared to the majority.   
 
+In datasets with severely class-imbalanced classifiers, the classifier will always “predict” the most common class without performing any feature analysis and will have a high degree of accuracy, but not the correct one.
+
+## Recommendations for Future
 Machine learning algorithms perform optimally when the number of samples in each class is about the same. When the data set is imbalanced, a high accuracy rate can be achieved by predicting the majority class, but this will lead to a failure to recognize the minority class, which is often the main objective of creating the model in the first place. Resampling technique can be used to highly imbalanced datasets. Under-sampling will remove samples from the majority class, while over-sampling will add more examples for the minority class. 
 
 10 Techniques to deal with Imbalanced Classes in Machine Learning. (2020, July 23). https://www.analyticsvidhya.com/blog/2020/07/10-techniques-to-deal-with-class-imbalance-in-machine-learning/
