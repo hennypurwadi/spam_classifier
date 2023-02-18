@@ -18,7 +18,7 @@ presented with suggestions for future steps in this area, and the graphical user
 proposed along with a diagram concept plan for the model’s integration into daily work.
 
 ![diagram flow](https://github.com/hennypurwadi/spam_classifier/blob/main/spam_filter/docs/images/spam_filter_diagram.jpeg)
-## Spam classification model requires several steps:
+## To build Spam classifier model, requires several steps:
 1.First, the model is trained with labelled dataset. Then, save the trained model.
 2.Then the stored model predicts spam or not spam when user enters new email.
 3.The input email and prediction are added to dataset, to increase model accuracy over time.
