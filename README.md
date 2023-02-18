@@ -3,8 +3,6 @@
 Cloud link: https://hennypurwadi-spam-classifier-spam-classifier-ubc344.streamlit.app/
 
 
-![diagram flow] (https://github.com/hennypurwadi/spam_classifier/blob/main/spam_filter/docs/images/spam_filter_diagram.jpeg)
-
 ## Note:
 
 ### To create conda environment from anaconda command prompt (envir.yaml)
