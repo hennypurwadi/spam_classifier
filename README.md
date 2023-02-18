@@ -78,13 +78,14 @@ Among various classifiers in this project, Logistic Regression has displayed wor
 ## Multinomial Naiive Bayes model performance:
 Among various classifiers in this project, Multinomial Naïve bayes has displayed very good performance, with accuracy of 99%, precision of 98%, 93% recall, and 96% f1-score. Therefore, this top performer model will be used to classify new data.
 
-![Multionomial NB performence](https://github.com/hennypurwadi/spam_classifier/blob/main/spam_filter/docs/images/Multinomial%20NB.jpg)
+![Multionomial NB performance](https://github.com/hennypurwadi/spam_classifier/blob/main/spam_filter/docs/images/Multinomial%20NB.jpg)
 
 ## Error Analysis
 Using simpler metrics like accuracy score only without comparing to other metrics can be misleading. Logistic Regression model show high accuracy just by predicting the majority class (ham), although it failed to identify minority class (spam). This can result in a high rate of false negative, where spam emails incorrectly classified as ham. 
 
 Multinomial naiive bayes as the best model, has been saved as both model.pkl and vectorizer.pkl. It has been loaded and deployed to cloud.
 Although Multinomial Naïve Bayes performed the best among other algorithms in training and testing data, it still shows several errors in classifying new data.
+![Multionomial NB error predict new data](https://github.com/hennypurwadi/spam_classifier/blob/main/spam_filter/docs/images/predict_new_data.jpg)
 
 ## Limitation
 This study has several limitations, such as: 
