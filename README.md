@@ -49,14 +49,22 @@ Among various classifiers in this project, Multinomial Naïve bayes has displaye
 ## Evaluation 
 The confusion matrix is a table that summarizes the classification to predict different classes. One axis of the confusion matrix represents the label predicted by the model, while the other axis represents the actual label. (Burkov, A., 2019, p. 65)
 
+
 Based on confusion matrix output, this research used four effective measures: 
-True Positive (TP) = Truly predicted as Positive. True Negative (TN) = Truly predicted as Negative. False Positive (FP) = Falsely predicted as Positive. False Negative (FN) = Falsely predicted as Negative.
+
+True Positive (TP) = Truly predicted as Positive. 
+
+True Negative (TN) = Truly predicted as Negative. 
+
+False Positive (FP) = Falsely predicted as Positive. 
+
+False Negative (FN) = Falsely predicted as Negative.
+
+Accuracy(A) = (TP+TN) / (TP + TN + FP + FN)
 
 Precision is the proportion of correctly positive predictions divided by the total number of positive predictions. Precision = TP/(TP+FP)
 
 Recall is proportion of correctly positive predictions divided by the total number of actual positive. Recall(R) = TP/(TP+FN)
-
-Accuracy is proportion of correct predictions divided by the total examples (Burkov, A., 2019, p. 67). Accuracy(A) = (TP+TN) / (TP + TN + FP + FN)
 
 F1-Score is balancing precision and recall. The worst value is 0, and the best value is 1. 
 
