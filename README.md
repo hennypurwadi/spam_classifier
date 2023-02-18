@@ -42,7 +42,7 @@ In contrast, those words do not appear in ham categories.
 ![diagram flow](https://github.com/hennypurwadi/spam_classifier/blob/main/spam_filter/docs/images/ham_wordcloud.jpeg)
 
 ## Compared several Machine Learning Model's performance:
-Among various classifiers in this project, Multinomial Naïve bayes has displayed very good performance, with accuracy of 99%, precision of 98% , 93% recall, and 96% f1-score. Therefore, this top performer model will be used to classify new data.
+Among various classifiers in this project, Multinomial Naïve bayes has displayed very good performance, with accuracy of 99%, precision of 98%, 93% recall, and 96% f1-score. Therefore, this top performer model will be used to classify new data.
 
 ![ML performence](https://github.com/hennypurwadi/spam_classifier/blob/main/spam_filter/docs/images/ML_performance.jpg)
 
@@ -84,6 +84,8 @@ Machine learning algorithms perform optimally when the number of samples in each
 10 Techniques to deal with Imbalanced Classes in Machine Learning. (2020, July 23). https://www.analyticsvidhya.com/blog/2020/07/10-techniques-to-deal-with-class-imbalance-in-machine-learning/
 
 ## Conclusion
+
+A good spam classifier created with machine Learning algorithm can increase service team's productivity and effectiveness, because it can simplify and make filtering easier. 
 
 -----------------------
 ## Environment setup:
