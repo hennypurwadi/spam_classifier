@@ -1,6 +1,6 @@
 ## Spam filter
 
-Cloud link: https://hennypurwadi-spam-classifier-spam-classifier-ubc344.streamlit.app/
+App link: https://hennypurwadi-spam-classifier-spam-classifier-ubc344.streamlit.app/
 
 ## Abstract
 This project goal is to build a machine learning model to filter and classify messages as spam or 
